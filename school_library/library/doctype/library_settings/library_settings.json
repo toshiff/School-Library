@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "Prompt",
+ "creation": "2026-05-14 15:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "issingle": 1,
+ "field_order": [
+  "default_loan_period_days",
+  "default_max_books",
+  "col_break_1",
+  "library_name",
+  "librarian_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "default_loan_period_days",
+   "fieldtype": "Int",
+   "label": "Default Loan Period (Days)",
+   "default": "14"
+  },
+  {
+   "fieldname": "default_max_books",
+   "fieldtype": "Int",
+   "label": "Default Max Books per Member",
+   "default": "3"
+  },
+  {
+   "fieldname": "col_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "library_name",
+   "fieldtype": "Data",
+   "label": "Library Name"
+  },
+  {
+   "fieldname": "librarian_email",
+   "fieldtype": "Data",
+   "label": "Librarian Email",
+   "options": "Email"
+  }
+ ],
+ "links": [],
+ "modified": "2026-05-14 15:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "Library Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
