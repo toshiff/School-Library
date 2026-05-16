@@ -6,4 +6,4 @@ app_email = "toshiffshaik@gmail.com"
 app_license = "mit"
 
 # Required apps — bench will refuse to install without these
-required_apps = ["school_edtech"]
+# required_apps = ["school_edtech"]

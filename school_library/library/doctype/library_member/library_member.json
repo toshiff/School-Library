@@ -1,8 +1,7 @@
 {
  "actions": [],
- "allow_rename": 0,
  "autoname": "format:LIB-MEM-{#####}",
- "creation": "2026-05-14 15:00:00.000000",
+ "creation": "2026-05-14 15:00:00",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -22,54 +21,54 @@
  ],
  "fields": [
   {
+   "default": "Student",
    "fieldname": "member_type",
    "fieldtype": "Select",
-   "label": "Member Type",
-   "options": "Student\nTeacher\nExternal",
-   "reqd": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "default": "Student"
+   "label": "Member Type",
+   "options": "Student\nTeacher\nExternal",
+   "reqd": 1
   },
   {
    "fieldname": "member_name",
    "fieldtype": "Data",
-   "label": "Member Name",
-   "reqd": 1,
    "in_list_view": 1,
-   "in_standard_filter": 1
+   "in_standard_filter": 1,
+   "label": "Member Name",
+   "reqd": 1
   },
   {
    "fieldname": "col_break_1",
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.member_type=='Student'",
    "fieldname": "student",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Student",
-   "options": "Student",
-   "depends_on": "eval:doc.member_type=='Student'",
-   "in_list_view": 1
+   "options": "Student"
   },
   {
+   "depends_on": "eval:doc.member_type=='Teacher'",
    "fieldname": "teacher",
    "fieldtype": "Link",
    "label": "Teacher",
-   "options": "Teacher",
-   "depends_on": "eval:doc.member_type=='Teacher'"
+   "options": "Teacher"
   },
   {
+   "depends_on": "eval:doc.member_type=='External'",
    "fieldname": "external_email",
    "fieldtype": "Data",
    "label": "Email",
-   "options": "Email",
-   "depends_on": "eval:doc.member_type=='External'"
+   "options": "Email"
   },
   {
+   "depends_on": "eval:doc.member_type=='External'",
    "fieldname": "external_phone",
    "fieldtype": "Data",
-   "label": "Phone",
-   "depends_on": "eval:doc.member_type=='External'"
+   "label": "Phone"
   },
   {
    "fieldname": "section_meta",
@@ -77,37 +76,37 @@
    "label": "Membership"
   },
   {
+   "default": "Today",
    "fieldname": "membership_date",
    "fieldtype": "Date",
-   "label": "Membership Date",
-   "default": "Today"
+   "label": "Membership Date"
   },
   {
+   "default": "1",
    "fieldname": "is_active",
    "fieldtype": "Check",
-   "label": "Is Active",
-   "default": "1"
+   "label": "Is Active"
   },
   {
    "fieldname": "col_break_2",
    "fieldtype": "Column Break"
   },
   {
+   "default": "3",
    "fieldname": "max_books_allowed",
    "fieldtype": "Int",
-   "label": "Max Books Allowed",
-   "default": "3"
+   "label": "Max Books Allowed"
   },
   {
+   "default": "0",
    "fieldname": "current_issued_count",
    "fieldtype": "Int",
    "label": "Currently Issued",
-   "read_only": 1,
-   "default": "0"
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2026-05-14 15:00:00.000000",
+ "modified": "2026-05-15 17:43:24.286608",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Library Member",
@@ -140,6 +139,12 @@
    "role": "All"
   }
  ],
+ "row_format": "Dynamic",
+ "search_fields": "student,member_name",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "member_name",
+ "translated_doctype": 1
 }

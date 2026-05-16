@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2026-05-16 10:52:06.136235",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-05-16 10:52:06.136235",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "lib-book-inventory",
+ "owner": "Administrator",
+ "page_name": "lib-book-inventory",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Book Inventory Report"
+}
