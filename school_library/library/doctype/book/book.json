@@ -1,8 +1,7 @@
 {
  "actions": [],
- "allow_rename": 0,
  "autoname": "format:LIB-BK-{#####}",
- "creation": "2026-05-14 15:00:00.000000",
+ "creation": "2026-05-14 15:00:00",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -28,17 +27,17 @@
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Title",
-   "reqd": 1,
    "in_list_view": 1,
-   "in_standard_filter": 1
+   "in_standard_filter": 1,
+   "label": "Title",
+   "reqd": 1
   },
   {
    "fieldname": "isbn",
    "fieldtype": "Data",
-   "label": "ISBN",
    "in_list_view": 1,
-   "in_standard_filter": 1
+   "in_standard_filter": 1,
+   "label": "ISBN"
   },
   {
    "fieldname": "edition",
@@ -52,18 +51,18 @@
   {
    "fieldname": "category",
    "fieldtype": "Link",
-   "label": "Category",
-   "options": "Book Category",
    "in_list_view": 1,
-   "in_standard_filter": 1
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "Book Category"
   },
   {
    "fieldname": "author",
    "fieldtype": "Link",
-   "label": "Author",
-   "options": "Author",
    "in_list_view": 1,
-   "in_standard_filter": 1
+   "in_standard_filter": 1,
+   "label": "Author",
+   "options": "Author"
   },
   {
    "fieldname": "publisher",
@@ -76,18 +75,18 @@
    "label": "Inventory"
   },
   {
+   "default": "1",
    "fieldname": "total_copies",
    "fieldtype": "Int",
    "label": "Total Copies",
-   "default": "1",
    "reqd": 1
   },
   {
    "fieldname": "available_copies",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Available Copies",
-   "read_only": 1,
-   "in_list_view": 1
+   "read_only": 1
   },
   {
    "fieldname": "col_break_2",
@@ -99,10 +98,10 @@
    "label": "Shelf Location"
   },
   {
+   "default": "English",
    "fieldname": "language",
    "fieldtype": "Data",
-   "label": "Language",
-   "default": "English"
+   "label": "Language"
   },
   {
    "fieldname": "section_meta",
@@ -120,17 +119,18 @@
    "label": "Year Published"
   },
   {
+   "default": "1",
    "fieldname": "is_active",
    "fieldtype": "Check",
-   "label": "Is Active",
-   "default": "1"
+   "label": "Is Active"
   }
  ],
  "links": [],
- "modified": "2026-05-14 15:00:00.000000",
+ "modified": "2026-05-16 11:07:23.240126",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Book",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -160,7 +160,12 @@
    "role": "All"
   }
  ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "track_changes": 1
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1,
+ "translated_doctype": 1
 }

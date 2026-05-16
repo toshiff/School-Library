@@ -1,8 +1,7 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "field:author_name",
- "creation": "2026-05-14 15:00:00.000000",
+ "autoname": "AUTH-######",
+ "creation": "2026-05-14 15:00:00",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -14,16 +13,16 @@
   {
    "fieldname": "author_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Author Name",
    "reqd": 1,
-   "unique": 1,
-   "in_list_view": 1
+   "unique": 1
   },
   {
    "fieldname": "nationality",
    "fieldtype": "Data",
-   "label": "Nationality",
-   "in_list_view": 1
+   "in_list_view": 1,
+   "label": "Nationality"
   },
   {
    "fieldname": "biography",
@@ -32,10 +31,11 @@
   }
  ],
  "links": [],
- "modified": "2026-05-14 15:00:00.000000",
+ "modified": "2026-05-16 11:09:25.936690",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Author",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -65,6 +65,8 @@
    "role": "All"
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "states": []
 }
