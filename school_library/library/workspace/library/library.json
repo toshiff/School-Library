@@ -1,0 +1,87 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"0J0qumT40a\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Library</span>\",\"col\":12}},{\"id\":\"xagIoK3_mX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"My Library\",\"col\":4}},{\"id\":\"huXCLs6Qgp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":4}},{\"id\":\"UNpS1UooKa\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Book Inventory\",\"col\":4}},{\"id\":\"-RJgTlJlF7\",\"type\":\"card\",\"data\":{\"card_name\":\"Library\",\"col\":4}}]",
+ "creation": "2026-05-15 17:30:22.148043",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "fal fa-book",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 1,
+ "label": "Library",
+ "links": [
+  {
+   "doctype_view": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "restrict_on_lok_adalat": 0,
+   "type": "Card Break"
+  },
+  {
+   "doctype_view": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Book Issue",
+   "link_count": 0,
+   "link_to": "issue-book",
+   "link_type": "Page",
+   "onboard": 0,
+   "restrict_on_lok_adalat": 0,
+   "type": "Link"
+  },
+  {
+   "doctype_view": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library Member",
+   "link_count": 0,
+   "link_to": "Library Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "restrict_on_lok_adalat": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-05-21 12:27:54.417554",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "Library",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 3.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Book Inventory",
+   "link_to": "lib-book-inventory",
+   "type": "Page"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "My Library",
+   "link_to": "my-library",
+   "type": "Page"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Dashboard",
+   "link_to": "library-dashboard",
+   "type": "Page"
+  }
+ ],
+ "title": "Library"
+}
