@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "AUTH-######",
+ "autoname": "AUTH-.######",
  "creation": "2026-05-14 15:00:00",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -31,7 +31,7 @@
   }
  ],
  "links": [],
- "modified": "2026-05-16 11:09:25.936690",
+ "modified": "2026-07-28 12:44:31.914954",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Author",
